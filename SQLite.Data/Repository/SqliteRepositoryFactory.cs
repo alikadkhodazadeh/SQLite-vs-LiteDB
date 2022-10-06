@@ -4,7 +4,7 @@ public class SqliteRepositoryFactory
 {
     public ISqliteRepository CreateRepository()
     {
-        Context db = new ContextFactory().CreateDbContext(null!);
+        SqliteContext db = new SqliteContextFactory().CreateDbContext(null!);
         return new SqliteRepository(db);
     }
 }

@@ -2,9 +2,9 @@
 
 public class SqliteRepository : ISqliteRepository
 {
-    private readonly Context _context;
+    private readonly SqliteContext _context;
 
-    public SqliteRepository(Context context) => _context = context;
+    public SqliteRepository(SqliteContext context) => _context = context;
 
     public void Add(User user) => _context.Users.Add(user);
     public void Add(IEnumerable<User> users) => _context.Users.AddRange(users);
