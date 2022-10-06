@@ -2,7 +2,7 @@
 
 public class SqliteContext : DbContext
 {
-    const string connectionString = "Data Source=People.sqlite";
+    const string connectionString = "Data Source=People-Sqlite.db";
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

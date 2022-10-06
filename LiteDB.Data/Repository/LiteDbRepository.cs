@@ -4,7 +4,7 @@ public class LiteDbRepository : ILiteDbRepository
 {
     private readonly LiteDatabase _db;
     private readonly ILiteCollection<User> _users;
-    const string dbName = "People.db";
+    const string dbName = "People-LiteDb.db";
 
     public LiteDbRepository()
     {
@@ -18,7 +18,7 @@ public class LiteDbRepository : ILiteDbRepository
 
     public void Dispose() => _db.Dispose();
 
-    public IReadOnlyList<User> Get() => _users.FindAll().Take(100).ToList().AsReadOnly();
+    public IReadOnlyList<User> Get() => _users.FindAll().ToList().AsReadOnly();
 
     public User? GetById(int id) => _users.FindById(id);
 }

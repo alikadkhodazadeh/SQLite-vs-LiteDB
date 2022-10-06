@@ -2,7 +2,6 @@
 {
     static void Main()
     {
-        var repo = new SqliteRepositoryFactory().CreateRepository();
-        Console.WriteLine(JsonSerializer.Serialize(repo.Get()));
+        BenchmarkRunner.Run(typeof(DatabaseQueries).Assembly);
     }
 }
