@@ -1,4 +1,4 @@
-# SQLite-vs-LiteDB
+# SQLite vs LiteDB
 
 ```md
 BenchmarkDotNet=v0.13.2, OS=Windows 11 (10.0.22000.1042/21H2)
