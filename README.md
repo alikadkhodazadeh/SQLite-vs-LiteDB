@@ -10,7 +10,7 @@ Job=InProcess  Toolchain=InProcessEmitToolchain
 
 |                     Method |    Mean |    Error |   StdDev |        Gen0 |       Gen1 |      Gen2 | Allocated |
 |--------------------------- |--------:|---------:|---------:|------------:|-----------:|----------:|----------:|
-| Get_All_Record_From_SQLite | 1.496 s | 0.1200 s | 0.3537 s |  22000.0000 |  9000.0000 | 2000.0000 | 121.22 MB |
-| Get_All_Record_From_LiteDB | 2.308 s | 0.1572 s | 0.4634 s | 118000.0000 | 33000.0000 | 4000.0000 | 687.48 MB |
+| Get_All_Records_From_SQLite | 1.496 s | 0.1200 s | 0.3537 s |  22000.0000 |  9000.0000 | 2000.0000 | 121.22 MB |
+| Get_All_Records_From_LiteDB | 2.308 s | 0.1572 s | 0.4634 s | 118000.0000 | 33000.0000 | 4000.0000 | 687.48 MB |
 
 ```
